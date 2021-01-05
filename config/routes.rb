@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  devise_for :models
   resources :todo_lists do
     resources :todo_items do
       member do
